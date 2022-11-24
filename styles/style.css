@@ -3,11 +3,8 @@
 * {
     font-family: 'Basic', sans-serif !important;
 }
-.bg-primary{
+.bg-white{
     background-image: url(../assets/Background/pexels-pixabay-53594.jpg);
-}
-.navbar{
-        background-image: url(../assets/Background/pexels-pixabay-53594.jpg);
 }
 
 .jumbotron{
