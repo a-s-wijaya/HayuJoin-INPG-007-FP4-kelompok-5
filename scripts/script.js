@@ -283,7 +283,7 @@ submitWeather.addEventListener('submit', function(e) {
                     <h2 class="display-4 fw-bold mb-3">${response.location.name}</h2>
                     <p>${response.location.name} is a place located in ${response.location.region}, ${response.location.country}. At this moment, ${response.location.name} is curently ${response.forecast.forecastday[0].hour[hours].condition.text}  <img src="${response.forecast.forecastday[0].hour[hours].condition.icon}" alt="Condition Weather" width="25px">.</p>
                     <p>On a clody day, you can:.</p>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush mb-2">
                         <li class="list-group-item">Play board game</li>
                         <li class="list-group-item">Watch movie</li>
                         <li class="list-group-item">Read a book</li>
@@ -298,7 +298,7 @@ submitWeather.addEventListener('submit', function(e) {
                     <h2 class="display-4 fw-bold mb-3">${response.location.name}</h2>
                     <p>${response.location.name} is a place located in ${response.location.region}, ${response.location.country}. At this moment, ${response.location.name} is curently ${response.forecast.forecastday[0].hour[hours].condition.text}  <img src="${response.forecast.forecastday[0].hour[hours].condition.icon}" alt="Condition Weather" width="25px">.</p>
                     <p>On a sunny day, you can:</p>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush mb-2">
                         <li class="list-group-item">Go to the beach</li>
                         <li class="list-group-item">Go to the park</li> 
                         <li class="list-group-item">Go to the mall</li>
@@ -313,7 +313,7 @@ submitWeather.addEventListener('submit', function(e) {
                     <h2 class="display-4 fw-bold mb-3">${response.location.name}</h2>
                     <p>${response.location.name} is a place located in ${response.location.region}, ${response.location.country}. At this moment, ${response.location.name} is curently ${response.forecast.forecastday[0].hour[hours].condition.text}  <img src="${response.forecast.forecastday[0].hour[hours].condition.icon}" alt="Condition Weather" width="25px">.</p>
                     <p>On a rainy day, you can:</p>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush mb-2">
                         <li class="list-group-item">Play board game</li>
                         <li class="list-group-item">Watch movie</li>
                         <li class="list-group-item">Read a book</li>
@@ -328,7 +328,7 @@ submitWeather.addEventListener('submit', function(e) {
                     <h2 class="display-4 fw-bold mb-3">${response.location.name}</h2>
                     <p>${response.location.name} is a place located in ${response.location.region}, ${response.location.country}. At this moment, ${response.location.name} is curently ${response.forecast.forecastday[0].hour[hours].condition.text}  <img src="${response.forecast.forecastday[0].hour[hours].condition.icon}" alt="Condition Weather" width="25px">.</p>
                     <p>On a clear day, you can:</p>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush mb-2">
                         <li class="list-group-item">Go to the beach</li>
                         <li class="list-group-item">Go to the park</li>
                         <li class="list-group-item">Go to the mall</li>
@@ -343,7 +343,7 @@ submitWeather.addEventListener('submit', function(e) {
                     <h2 class="display-4 fw-bold mb-3">${response.location.name}</h2>
                     <p>${response.location.name} is a place located in ${response.location.region}, ${response.location.country}. At this moment, ${response.location.name} is curently ${response.forecast.forecastday[0].hour[hours].condition.text}  <img src="${response.forecast.forecastday[0].hour[hours].condition.icon}" alt="Condition Weather" width="25px">.</p>
                     <p>On a snowy day, you can:</p>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush mb-2">
                         <li class="list-group-item">Warm yourself up</li>
                         <li class="list-group-item">Make a snowman</li>
                         <li class="list-group-item">Go sledding</li>
@@ -358,7 +358,7 @@ submitWeather.addEventListener('submit', function(e) {
                     <h2 class="display-4 fw-bold mb-3">${response.location.name}</h2>
                     <p>${response.location.name} is a place located in ${response.location.region}, ${response.location.country}. At this moment, ${response.location.name} is curently ${response.forecast.forecastday[0].hour[hours].condition.text}  <img src="${response.forecast.forecastday[0].hour[hours].condition.icon}" alt="Condition Weather" width="25px">.</p>
                     <p>On a thundery day, you can:</p>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush mb-2">
                         <li class="list-group-item">Stay inside</li>
                         <li class="list-group-item">Watch movie</li>
                         <li class="list-group-item">Read a book</li>
