@@ -1,29 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    font-family: 'Basic', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
 }
-.bg-white{
+
+body {
+    background-size:cover;
     background-image: url(../assets/Background/pexels-pixabay-53594.jpg);
 }
 
-.jumbotron{
-    background-color: #F2F6FF;
-    color: #234CAD;
+span.text-primary{
+    color: #234CAD !important;
 }
 
-.jumbotron a.btn-outline-primary{
-    font-size: 22px !important;
-    transition: all 0.5s;
+footer.text-primary{
+    color: #234CAD !important;
 }
 
-.jumbotron1{
-    background-color: #234CAD;
+.bg-main{
+    color: #234CAD !important;
+    background: none;
 }
 
-.blue{
-    color: #234CAD;
+.active{
+    background-color: #234CAD !important;
+    color: white !important;
 }
+
+.btn-primary{
+    background-color: #234CAD !important;
+    border-color: #234CAD !important;
+}
+
+li.list-group-item{
+    background: none !important;
+    color: #234CAD !important;
+    border: none;
+}
+
+button.bg-primary{
+    background-color: #234CAD !important;
+}
+
+h2.bg-primary{
+    background-color: #234CAD !important;
+}
+
+h2.text-primary{
+    color: #234CAD !important;
+}
+
+.img-weather{
+    width:150px;
+}
+
+.img-button{
+    width: 100%;
+}
+
+table.text-primary{
+    color: #234CAD !important;
+}
+
+.glass{
+    background: rgba(255, 255, 255, 0.41);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    z-index: 1;
+    color: #234CAD !important;
+}
+
+img.bg-primary{
+    background-color: #234CAD !important;
+}
+
 .item{
     position: relative;
     transform: translateY(50px);
@@ -37,63 +90,60 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1400px){
-    .svg-jumbotron{
-        height: 40rem;
-    }
+#loading {
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+    visibility: hidden;
 }
 
-@media screen and (max-width: 1200px){
-    .svg-jumbotron{
-        height: 30rem;
-    }
+.overlay-inner {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
-@media screen and (max-width: 992px){
-    #jumbotron-background{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url(../assets/svg/Jumbotron.svg);
-        background-position: 0% 25%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-filter: blur(5px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(8px);
-        z-index: -1;
-    }
-    
-    #jumbotron-background #layer{
-        background-color: #F2F6FF;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.1;
-    }
-    
-    .jumbotron {
-        position: relative;
-        z-index: 1;
-    }
+.overlay-content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 768px){
-    #about {
-        margin-top: -325px !important;
+a img{
+    width: 30px;
+    height: 30px;
+}
+
+.spinner {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-top-color: #000535;
+    animation: spin 1s infinite linear;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+#loading.display {
+    visibility: visible;
+}
+
+#inputResult {
+    text-transform: capitalize;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
     }
-    
-    .register-page {
-        background-size: 350px;
-    }
-    
-    .login-page {
-        background-size: 350px;
+    to {
+        transform: rotate(360deg);
     }
 }
