@@ -250,6 +250,9 @@ submitWeather.addEventListener('submit', function(e) {
 		displayLoading();
 		var date = new Date();
 		var hours = date.getHours();
+		var minutes = date.getMinutes();
+		var seconds = date.getSeconds();
+		var actualTime = hours + ':' + minutes + ':' + seconds;
 		var time = hours + ':00:00';
 		var cityInput = document.getElementById('cityInput').value;
 		
@@ -416,7 +419,7 @@ submitWeather.addEventListener('submit', function(e) {
 				</tr>
 				<tr>
 				<th class="fw-semibold" scope="row">Access Time</th>
-				<td>: ${time} (${dateInput.value})</td>
+				<td>: ${actualTime} (${dateInput.value})</td>
 				</tr>
 				</table>
 				</div>`;
