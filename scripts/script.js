@@ -273,6 +273,20 @@ submitWeather.addEventListener('submit', function(e) {
 				inputResult.innerHTML = cityInput;
 				toast.show()
 			} else {
+				var dataSet = [];
+				for(var i = 0; i < response.forecast.forecastday[0].hour.length; i++) {
+					dataSet.push([
+						response.forecast.forecastday[0].hour[i].time,
+						response.forecast.forecastday[0].hour[i].temp_c + '°C',
+						response.forecast.forecastday[0].hour[i].humidity + '%',
+						response.forecast.forecastday[0].hour[i].wind_kph + ' km/h',
+						response.forecast.forecastday[0].hour[i].pressure_mb + ' mbar'
+					]);
+				}
+				$("#weatherTable").dataTable().fnDestroy();
+				$('#weatherTable').DataTable({
+					data: dataSet,
+				});
                 var cName = response.location.name;
                 var cNameLow = cName.toLowerCase();
                 var mainCityInfo = document.getElementById('mainCityInfo');
@@ -481,5 +495,5 @@ window.onload = function() {
 	var yyyy = today.getFullYear();
 	today = yyyy + '-' + mm + '-' + dd;
 	dateInput.value = today;
-    feather.replace()
+    feather.replace();
 }
